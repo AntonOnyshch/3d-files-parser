@@ -1,13 +1,13 @@
-import ObjModel from './Obj-Model'
+import OBJModel from './Obj-Model'
 import IObjModel from './IObj-Model'
 import {OBJParser} from './Obj-Parser'
 
 export default class ObjFile
 {
     constructor(file: File) {
-            this._file = file;
-            this._objModel = new ObjModel();
-            this._objParser = new OBJParser(this._objModel);
+        this._file = file;
+        this._objModel = new OBJModel();
+        this._objParser = new OBJParser(this._objModel);
     }
 
     private _file: File;
