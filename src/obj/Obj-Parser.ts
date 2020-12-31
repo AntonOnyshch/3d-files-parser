@@ -51,6 +51,9 @@ enum ObjFileStructureTokens
     //#endregion
 }
 
+/**
+ * Represents parser for OBJ file
+ *  @extends IFileParser */
 export class OBJParser implements IFileParser
 {
     readonly spaceChar = ' ';
@@ -211,9 +214,13 @@ export class OBJParser implements IFileParser
         }
         return this._buffer.subarray(firstSymbolIndex, i);
     }
-    
 
-    findNewLineIndex(initial: number, buffer: Int8Array)
+    /**
+    * @param {number} initial - initial index from where to start searching
+    * @param {Int8Array} buffer - data buffer
+    * @returns {number} index where Line feed symbol was found.
+    */
+    findNewLineIndex(initial: number, buffer: Int8Array) : number
     {
         for (let i = initial; i < buffer.length; i++)
             if(buffer[i] === this.NEWLINE_DEC)
