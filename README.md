@@ -23,6 +23,11 @@ Parser for 3d files such as OBJ, STL and etc.
 
 <a name="perform-tests"></a>
 # Tests
+Chekout **package.json** for additional information.
+### Parser
+```console
+npm run test:parser
+```
 
 <a name="how-it-works"></a>
 # How it works?
