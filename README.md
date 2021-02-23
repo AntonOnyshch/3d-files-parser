@@ -1,5 +1,6 @@
 # 3d-files-parser
-Parser for 3d files such as OBJ, STL and etc.
+Parser for OBJ files.
+This parser is not completed. I'v written this for my own purpose.
 
 # Table of Contents
 - [Basic structure](#basic-structure)
